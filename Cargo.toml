@@ -1,0 +1,12 @@
+[package]
+name = "color-regex"
+version = "0.1.0"
+authors = ["Benjamin Fry <benjamin.fry@salesforce.com>"]
+
+[[bin]]
+name = "crx"
+path = "src/bin.rs"
+
+[dependencies]
+clap = "2.25.0"
+colored = "1.5.2"
