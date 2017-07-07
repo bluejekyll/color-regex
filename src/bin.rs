@@ -60,9 +60,7 @@ fn main() {
             ref s @ _ => s.normal(),
         };
 
-        writeln!(&mut output, "{}", line).expect("error writing to standard out");
-        // output.write(line.as_bytes()).expect("error writing to standard out");
-        // output.flush().expect("error flushing stdout");
+        write!(&mut output, "{}", line).expect("error writing to standard out");
         buf.clear();
     }
 }
