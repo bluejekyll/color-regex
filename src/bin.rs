@@ -90,9 +90,9 @@ fn main() {
         }
 
         let line = match regexes.matches(&buf) {
-            ref m @ _ if m.matched(0) => buf.green(),
-            ref m @ _ if m.matched(1) => buf.yellow(),
             ref m @ _ if m.matched(2) => buf.red().bold(),
+            ref m @ _ if m.matched(1) => buf.yellow(),
+            ref m @ _ if m.matched(0) => buf.green(),
             _ => buf.normal(),
         };
 
