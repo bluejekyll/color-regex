@@ -9,6 +9,6 @@ name = "crx"
 path = "src/bin.rs"
 
 [dependencies]
-clap = "2.25.0"
-colored = "1.5.2"
-regex = "0.2"
+clap = "*"
+colored = "*"
+regex = "*"
